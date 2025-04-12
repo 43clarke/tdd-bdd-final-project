@@ -105,7 +105,7 @@ def step_impl(context, element_name):
 ##################################################################
 
 ## UPDATE CODE HERE ##
-@when(u'I press the "{button}" button')
+@when('I press the "{button}" button')
 def step_impl(context, button):
     button_id = button.lower() + '-btn'
     context.driver.find_element(By.ID, button_id).click()
